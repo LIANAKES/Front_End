@@ -1,0 +1,44 @@
+/* селектор по элементу */
+p {
+    color: blueviolet;
+  }
+  
+  /* селектор по id */
+  #main-title {
+    color: aqua;
+  }
+  
+  /* селектор по классу */
+  
+  .description {
+    color: aquamarine;
+  }
+  
+  .main-description {
+    font-size: 38px;
+    /* color: brown; */
+  }
+  
+  span.description {
+    font-size: 50px;
+  }
+  
+  /* селектор по атрибуты */
+  /* [href] {
+    font-size: 40px;
+  } */
+  
+  [href="#main-title"] {
+    font-size: 40px;
+  }
+  
+  /* Универсальный селектор */
+  * {
+    margin: 0;
+  }
+  
+  
+  /* Конфликт стилей */
+  h1 {
+    color: red;
+  }

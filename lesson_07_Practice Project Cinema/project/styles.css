@@ -1,0 +1,29 @@
+main {
+  font-family: "Playwrite HR Lijeva", Couirer, cursive;
+  font-weight: bold;
+  font-style: normal;
+  background-color: rgb(24, 24, 138);
+  color: rgb(251, 0, 255);
+}
+
+body {
+  background-color: rgb(199, 207, 78);
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4a261;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}

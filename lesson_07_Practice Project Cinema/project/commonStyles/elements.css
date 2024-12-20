@@ -1,0 +1,89 @@
+header {
+  background-color: var(--color-primary);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-dark);
+}
+
+header .company-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+
+nav a:hover {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.active__link {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  text-align: center;
+}
+
+footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 15px 20px;
+  border-top: 2px solid var(--color-dark);
+  color: var(--color-dark);
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-name {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+}
